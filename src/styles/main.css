@@ -1,0 +1,230 @@
+@import url("/src/styles/home.css");
+@import url("/src/styles/about.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0 solid transparent;
+}
+
+body {
+  background-color: #eeeeee;
+  font-family: "Roboto", "sans-serif";
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  margin: auto;
+  max-width: 1000px;
+  height: 40px;
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-brand {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.navbar-nav {
+  gap: 40px;
+  margin-left: auto;
+  color: #333;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+nav > div,
+nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 90vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .navbar-container {
+    height: 50px;
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+  }
+
+  .navbar-nav {
+    font-size: 1.1rem;
+  }
+
+  .home-title {
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    min-width: 350px;
+  }
+
+  .note-card {
+    width: 350px;
+  }
+
+  .note-title {
+    font-size: 20px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    font-size: 20px;
+  }
+
+  .note-content {
+    font-size: 14px;
+  }
+
+  .note-date {
+    font-size: 12px;
+  }
+
+  .about-title {
+    font-size: 1.2rem;
+  }
+
+  .about-content {
+    font-size: 1.1rem;
+  }
+
+  footer p {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .notes-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-container {
+    height: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .navbar-nav {
+    font-size: 1.2rem;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .add-search-container {
+    flex-direction: row;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .search-input {
+    min-width: 400px;
+  }
+
+  .note-card {
+    width: 400px;
+  }
+
+  .home-header {
+    flex-direction: row;
+  }
+
+  .home-title {
+    font-size: 1.3rem;
+  }
+
+  .note-title {
+    font-size: 22px;
+  }
+
+  .edit-btn,
+  .delete-btn {
+    font-size: 22px;
+  }
+
+  .note-content {
+    font-size: 16px;
+  }
+
+  .note-date {
+    font-size: 14px;
+  }
+
+  .about-title {
+    font-size: 1.3rem;
+  }
+
+  .about-content {
+    font-size: 1.2rem;
+  }
+
+  .note-detail {
+    width: 500px;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+}

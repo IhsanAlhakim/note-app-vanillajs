@@ -1,0 +1,271 @@
+.home-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+}
+
+.home-title {
+  color: #333;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  min-width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+}
+
+.add-btn {
+  min-width: 80px;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.notes-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  justify-content: center;
+}
+
+.note-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 330px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.note-card:hover {
+  border-color: #999;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.note-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn,
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.note-body {
+  margin-bottom: 15px;
+}
+
+.note-content {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.note-footer {
+  text-align: right;
+}
+
+.note-date {
+  font-size: 14px;
+  color: #999;
+}
+
+.form-container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+  position: relative;
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.input-title,
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.input-title:focus,
+.input-content:focus {
+  border-color: #007bff;
+}
+
+.input-content {
+  resize: none;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+}
+
+.no-note {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 100px;
+  color: #333;
+}
+
+.note-detail-overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-detail-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #333;
+  font-size: 2rem;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.note-detail-close:hover {
+  color: #ff4d4d;
+}
+
+.note-detail {
+  width: 300px;
+  min-height: 200px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.note-detail-title {
+  margin-bottom: 20px;
+}

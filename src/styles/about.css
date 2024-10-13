@@ -1,0 +1,18 @@
+.about-title {
+  margin-top: 70px;
+  color: #333;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content {
+  font-size: 0.9rem;
+  color: #333;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
