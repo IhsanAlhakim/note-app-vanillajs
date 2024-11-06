@@ -1,4 +1,4 @@
 import App from "./scripts/app.js";
 
-window.addEventListener("load", App);
+window.addEventListener("DOMContentLoaded", App);
 window.addEventListener("hashchange", App);
