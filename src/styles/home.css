@@ -57,6 +57,8 @@
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   width: 330px;
+  max-height: 200px;
+  overflow: hidden;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -268,4 +270,9 @@ textarea {
 
 .note-detail-title {
   margin-bottom: 20px;
+}
+
+.note-detail-content {
+  max-height: 500px;
+  overflow-y: auto;
 }
